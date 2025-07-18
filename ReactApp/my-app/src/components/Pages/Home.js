@@ -10,17 +10,17 @@ function Home() {
     {
       title: "JavaScript Essentials",
       description: "Master JavaScript from scratch",
-      image: "https://via.placeholder.com/400x200.png?text=JavaScript+Essentials"
+      image: "https://repository-images.githubusercontent.com/657736250/efe020c3-cfc2-41f9-be41-ad581ffc9969"
     },
     {
       title: "React for Beginners",
       description: "Build dynamic UIs with React",
-      image: "https://via.placeholder.com/400x200.png?text=React+for+Beginners"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpsar4g7_BvYEHmqwMKx1-kTkhM89-kSYCveeYjykjMQZMjRoHj22PRvXQfTULxvO9snM&usqp=CAU"
     },
     {
       title: "Node.js & Express",
       description: "Backend with Node and Express",
-      image: "https://via.placeholder.com/400x200.png?text=Node+and+Express"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/800px-Node.js_logo.svg.png"
     }
   ];
 
@@ -29,7 +29,7 @@ function Home() {
       alert("Please login to access this course.");
       navigate('/login');
     } else {
-      navigate('/profile'); // or specific course route
+      navigate('/Courses'); // or specific course route
     }
   };
 
@@ -54,7 +54,7 @@ function Home() {
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{course.title}</h5>
                   <p className="card-text">{course.description}</p>
-                  <button onClick={handleTakeCourse} className="btn btn-outline-primary mt-auto">
+                  <button   onClick={handleTakeCourse} className="btn btn-outline-primary mt-auto">
                     Take Course
                   </button>
                 </div>

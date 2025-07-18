@@ -18,6 +18,12 @@ function Navbar() {
           <li className="nav-item">
             <Link className="nav-link" to="/">Home</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/Courses">Courses</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/About">About</Link>
+          </li>
           {token && (
             <li className="nav-item">
               <Link className="nav-link" to="/profile">Profile</Link>

@@ -38,11 +38,11 @@ class RegisterSerializer(serializers.ModelSerializer):
 
 
 class CourseSerializer(serializers.ModelSerializer):
-    mentor = UserSerializer(read_only=True)
-
     class Meta:
         model = Course
-        fields = ['id', 'title', 'description', 'mentor', 'price', 'is_paid', 'created_at']
+        fields = '__all__'
+        read_only_fields = ['mentor']
+
 
 class LectureSerializer(serializers.ModelSerializer):
     class Meta:
